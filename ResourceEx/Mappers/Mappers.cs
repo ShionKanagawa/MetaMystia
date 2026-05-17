@@ -219,6 +219,9 @@ public static partial class Mappers
             case FinishCondition.ConditionType.TalkWithCharacter:
                 // condition.label 已在方法开头统一设置，存的是角色标识
                 break;
+            case FinishCondition.ConditionType.SellInWork:
+                condition.amount = config?.amount ?? 0; // 要售卖的料理 ID
+                break;
             default:
                 break;
         }
