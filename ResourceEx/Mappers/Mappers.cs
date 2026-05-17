@@ -216,6 +216,9 @@ public static partial class Mappers
                 condition.amount = config?.amount ?? 0; // 所需的羁绊等级
                 // condition.label 已在方法开头统一设置，存的是角色标识
                 break;
+            case FinishCondition.ConditionType.TalkWithCharacter:
+                // condition.label 已在方法开头统一设置，存的是角色标识
+                break;
             default:
                 break;
         }
