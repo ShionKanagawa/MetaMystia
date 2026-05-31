@@ -100,7 +100,7 @@ public partial class PluginManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F3))
             {
                 StoryReplayManager.Test();
-                ResourceExManager.SpellTest();
+                ResourceEx.AssetBundles.Test.Test1();
             }
             if (Input.GetKeyDown(KeyCode.F11))
             {
