@@ -1,5 +1,6 @@
 using System;
 using HarmonyLib;
+using MetaMystia.ResourceEx.SpellCollection;
 
 namespace MetaMystia.Patch;
 
@@ -66,6 +67,14 @@ public static partial class PatchRegistry
         typeof(CollabBehaviourComponentPatch),
         typeof(DaySceneUIManagerPatch),
         typeof(TrackedMissionDataPatch),
+
+        // Spell Patches
+        typeof(Spell_Koakuma_FilterBlockPatch),
+        typeof(Spell_Koakuma_IngredientShufflePatch),
+        typeof(Spell_Koakuma_BeverageShufflePatch),
+        typeof(Spell_Koakuma_StorageFilterButtonPatch),
+        typeof(Spell_Koakuma_StorageFilterButtonRestorePatch),
+        typeof(Spell_Koakuma_CookerRedirectPatch),
     ];
 
     public static bool AllPatched => PatchedException == null;
@@ -90,3 +99,4 @@ public static partial class PatchRegistry
         }
     }
 }
+
