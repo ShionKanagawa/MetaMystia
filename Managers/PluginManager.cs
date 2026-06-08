@@ -102,6 +102,7 @@ public partial class PluginManager : MonoBehaviour
                 StoryReplayManager.Test();
                 ResourceExManager.SpellTest();
                 ResourceExManager.SpellKoakuma();
+                ResourceExManager.SpellShinki();
             }
 
             if (Input.GetKeyDown(KeyCode.F4))
